@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CONFIG_DIR="$HOME/.config"
+AUTOSTART_DIR="$CONFIG_DIR/autostart"
+
+if [ -d "$AUTOSTART_DIR" ]; then
+    #echo "المجلد $AUTOSTART_DIR موجود."
+else
+    mkdir -p "$AUTOSTART_DIR"
+    #echo "تم إنشاء المجلد $AUTOSTART_DIR."
+fi
